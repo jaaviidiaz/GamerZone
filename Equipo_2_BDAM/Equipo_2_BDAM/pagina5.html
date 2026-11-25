@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hecho_por" content="Roberto Fernández Sánchez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMERZONE - Contacto</title>
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo GAMERZONE" class="logo">
+        </div>
+        <h1>GAMERZONE</h1>
+        <p>Tu tienda especializada en componentes gaming</p>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- INICIO -->
+            <li><a href="pagina1.html">Presentación</a></li>
+            <li><a href="pagina2.html">Inicio</a></li>
+
+            <!-- PRODUCTOS -->
+            <li><a href="pagina3.html">Tienda</a></li>
+            <li><a href="pagina4.html">Comparativa</a></li>
+            <li><a href="pagina12.html">Ranking</a></li>
+
+            <!-- SERVICIOS -->
+            <li><a href="pagina6.html">Presupuesto</a></li>
+            <br><br>
+            <li><a href="pagina11.html">Envíos</a></li>
+
+            <!-- EMPRESA -->
+            <li><a href="pagina8.html">¿Quiénes somos?</a></li>
+            <li><a href="pagina7.html">¿Dónde estamos?</a></li>
+
+            <li><a href="pagina10.html">Blog</a></li>
+
+            <!-- CONTACTO -->
+            <li><a href="pagina5.html">Contacto</a></li>
+            <li><a href="pagina9.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contacto-seccion">
+            <h2>CONTÁCTANOS</h2>
+            <p>¿Tienes alguna duda? ¡Escríbenos y te responderemos lo antes posible!</p>
+
+            <div class="audio-container">
+                <p>Escucha el audio mientras rellenas el formulario</p>
+                <audio controls preload><source src="audio_e_video/musica.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="formulario-container">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: María García López">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono"required placeholder="Ej: 612345678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ej: usuario@correo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="provincia">Provincia (Andalucía)</label>
+                        <select id="provincia" name="provincia">
+                            <option value="Almería">Almería</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="Málaga" selected>Málaga</option>
+                            <option value="Sevilla">Sevilla</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivo">Motivo de contacto *</label>
+                        <textarea id="motivo" name="motivo" required maxlength="300" placeholder="Escribe aquí tu consulta (máx. 300 caracteres)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                        <button type="reset" class="btn-reset">Borrar todo</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="info-contacto">
+            <h2>INFORMACIÓN DE CONTACTO</h2>
+            <ul>
+                <li>Email: info@gamerzone.es</li>
+                <li>Teléfono: 952 123 456</li>
+                <li>Horario: Lunes a Viernes 9:00 - 18:00</li>
+                <li>Dirección: Calle Tecnología 123, Málaga</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Síguenos en redes sociales</h3>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+        </ul>
+        <p>&copy; 2026 GAMERZONE - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

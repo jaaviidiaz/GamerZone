@@ -1,0 +1,817 @@
+/* GAMERZONE - todo.css */
+
+/*  1. RESET  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/*  2. HEADER  */
+header {
+  background-color: #667eea;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid #ff00ff;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3em;
+  color: #e0e0ff;
+}
+
+.logo-container {
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+  border: 3px solid #ff00ff;
+  border-radius: 10px;
+}
+
+/*  3. NAV  */
+nav {
+  background-color: #1a1a2e;
+  padding: 15px 0;
+  border-bottom: 2px solid #667eea;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #667eea;
+  color: #000;
+}
+
+nav ul li a:visited {
+  color: #cccccc;
+}
+
+/*  4. MAIN  */
+main {
+  padding: 30px 20px;
+  background-color: #0f0f2d;
+  min-height: 500px;
+}
+
+/* Sección genérica (presentacion.html) */
+main section {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #ff00ff;
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ff00ff;
+}
+
+main section p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  color: #cccccc;
+}
+
+/*  5. BOTONES  */
+.btn, .btn-reset {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.btn-reset {
+  background-color: #764ba2;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.btn:hover {
+  background-color: #ff00ff;
+  transform: scale(1.1);
+}
+
+.btn-reset:hover {
+  background-color: #667eea;
+  transform: scale(1.1);
+}
+
+/*  6. PRECIO (compartido)  */
+.precio {
+  font-weight: bold;
+  color: #00ff00;
+  font-size: 1.1em;
+}
+
+/*  7. SECCIONES GENÉRICAS  */
+/*
+   Muchas secciones comparten el mismo patrón: fondo claro, borde primario, border-radius, padding. Se agrupan aquí y solo se añaden diferencias debajo.
+*/
+.ofertas, .info-empresa, .servicios, .tienda-seccion, .categorias, .comparativa-seccion, .conclusion, .contacto-seccion, .info-contacto, .presupuesto-seccion,.ubicacion-seccion, .contacto-rapido, .quienes-somos-seccion, .faq-seccion, .contacto-faq, .blog-seccion, .envios-seccion, .ranking-seccion, .equipo-seccion {
+  background-color: #16213e;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+
+/* Borde primario (mayoría) */
+.ofertas, .servicios, .tienda-seccion, .comparativa-seccion, .contacto-seccion, .presupuesto-seccion, .ubicacion-seccion, .quienes-somos-seccion, .faq-seccion, .blog-seccion, .envios-seccion, .ranking-seccion {
+  border: 2px solid #667eea;
+}
+
+/* Borde secundario */
+.info-empresa, .conclusion, .categorias, .info-contacto, .contacto-rapido, .contacto-faq, .equipo-seccion {
+  border: 2px solid #764ba2;
+}
+
+/* Padding extra en secciones más largas */
+.contacto-seccion, .presupuesto-seccion, .ubicacion-seccion, .faq-seccion, .blog-seccion, .envios-seccion, .ranking-seccion {
+  padding: 30px;
+}
+
+/* Max-width en secciones centradas */
+.contacto-seccion, .presupuesto-seccion, .ubicacion-seccion, .info-contacto, .contacto-rapido {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Títulos h2 en color primario */
+.ofertas h2, .servicios h2, .tienda-seccion h2, .comparativa-seccion h2, .contacto-seccion h2, .presupuesto-seccion h2, .ubicacion-seccion h2, .quienes-somos-seccion h2, .faq-seccion h2, .blog-seccion h2, .envios-seccion h2, .ranking-seccion h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+/* Títulos h2 en color secundario */
+.info-empresa h2, .conclusion h2, .categorias h2, .info-contacto h2, .contacto-rapido h2, .contacto-faq h2, .equipo-seccion h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #764ba2;
+  margin-bottom: 20px;
+}
+
+/* Párrafos descriptivos centrados */
+.ofertas p, .tienda-seccion p, .comparativa-seccion p, .contacto-seccion p, .presupuesto-seccion p, .ubicacion-seccion p, .quienes-somos-seccion p, .faq-seccion p, .blog-seccion p, .envios-seccion p, .ranking-seccion p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+/*  8. LISTAS DE SERVICIOS / CATEGORÍAS / CONTACTO  */
+.servicios ul, .categorias ul, .info-contacto ul, .contacto-rapido ul, .valores ul, .horario ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.servicios li, .categorias li {
+  font-size: 1em;
+  padding: 8px;
+  margin: 6px 0;
+  background-color: #0f0f2d;
+  border-radius: 5px;
+}
+
+.servicios li {
+  border-left: 4px solid #667eea;
+}
+
+.categorias li {
+  border-left: 4px solid #764ba2;
+  color: #ffffff;
+}
+
+.info-contacto li, .contacto-rapido li {
+  font-size: 1.1em;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #0f0f2d;
+  border-radius: 5px;
+  border-left: 4px solid #764ba2;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/*  9. FOOTER  */
+footer {
+  background-color: #16213e;
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 4px solid #667eea;
+  margin-top: 20px;
+}
+
+footer h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+footer p {
+  color: #888888;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.social-links {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 18px;
+  background-color: #667eea;
+  border-radius: 15px;
+}
+
+.social-links li a:hover {
+  background-color: #764ba2;
+}
+
+/*  10. PRESENTACIÓN  */
+.video-container {
+  width: 100%;
+  max-width: 854px;
+  margin: 0 auto 25px;
+  border: 2px solid #ff00ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+}
+
+.logo-link {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  border: 2px solid #667eea;
+}
+
+.logo-link img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ff00ff;
+  border-radius: 8px;
+}
+
+.logo-link img:hover {
+  border-color: #00ffff;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.logo-link p {
+  margin-top: 12px;
+  font-size: 1em;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/*  11. INICIO (index.html)  */
+.destacado {
+  background-color: #ff416c;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 3px solid #ff00ff;
+}
+
+.destacado h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.destacado p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #fff9f9;
+}
+
+.oferta {
+  background-color: #0f0f2d;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border-left: 5px solid #ff00ff;
+}
+
+.oferta h3 {
+  font-size: 1.4em;
+  color: #ff00ff;
+  margin-bottom: 8px;
+}
+
+.precio-antiguo {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.precio-oferta {
+  font-size: 1.3em;
+  color: #00ff00;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.descuento {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.info-empresa p {
+  font-size: 1em;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.info-empresa strong {
+  color: #ff00ff;
+}
+
+/*  12. TABLAS (base compartida)  */
+.tabla-productos, .tabla-comparativa, .tabla-ranking {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #0f0f2d;
+  border: 2px solid #667eea;
+}
+
+/* Cabecera de tabla */
+.tabla-productos thead, .tabla-ranking thead {
+  background-color: #667eea;
+  color: #ffffff;
+}
+
+.tabla-comparativa thead {
+  background-color: #5b75ec;
+  color: #ffffff;
+}
+
+.tabla-productos thead tr, .tabla-comparativa thead tr, .tabla-ranking thead tr {
+  border-bottom: 2px solid #ff00ff;
+}
+
+.tabla-productos th, .tabla-comparativa th,.tabla-ranking th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid #ffffff;
+}
+.tabla-productos th:last-child, .tabla-comparativa th:last-child, .tabla-ranking th:last-child {
+  border-right: none;
+}
+
+/* Filas tbody */
+.tabla-comparativa tbody tr:nth-child(odd), .tabla-ranking tbody tr:nth-child(odd) {
+  background-color: #0a0a1a;
+}
+
+.tabla-comparativa tbody tr:nth-child(even), .tabla-ranking tbody tr:nth-child(even) {
+  background-color: #0f0f2d;
+}
+
+.tabla-comparativa tbody tr:hover, .tabla-ranking tbody tr:hover {
+  background-color: #1a1a2e;
+}
+
+.tabla-productos tbody tr {
+  border-bottom: 1px solid #667eea;
+}
+
+.tabla-comparativa tbody tr, .tabla-ranking tbody tr {
+  border-bottom: 1px solid #667eea;
+}
+
+/* Celdas td */
+.tabla-productos td {
+  padding: 12px;
+  text-align: center;
+  vertical-align: top;
+  border-right: 1px solid #667eea;
+}
+
+.tabla-productos td:last-child {
+  border-right: none;
+}
+
+.tabla-comparativa td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.tabla-ranking td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Columnas especiales */
+.tabla-comparativa td:first-child {
+  font-weight: bold;
+  color: #667eea;
+  background-color: #0a0a1a;
+  width: 40%;
+}
+
+.tabla-comparativa td:nth-child(2), .tabla-comparativa td:nth-child(3) {
+  width: 30%;
+}
+
+.tabla-ranking td:first-child {
+  font-weight: bold;
+  color: #ff00ff;
+  background-color: #0a0a1a;
+  width: 10%;
+}
+
+.tabla-ranking td:nth-child(2) {
+  width: 30%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabla-ranking td:last-child {
+  color: #ffd700;
+  font-size: 1.2em;
+}
+
+/* Extras tabla productos */
+.tabla-productos caption {
+  font-size: 1.4em;
+  color: #667eea;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #0a0a1a;
+  border-bottom: 2px solid #667eea;
+}
+
+.tabla-productos img {
+  width: 80px;
+  border: 2px solid #ff00ff;
+  border-radius: 5px;
+}
+
+.tabla-productos ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.tabla-productos li {
+  padding: 3px 0;
+  color: #cccccc;
+  font-size: 0.9em;
+}
+
+.tabla-productos tfoot {
+  background-color: #0a0a1a;
+  font-weight: bold;
+}
+
+.tabla-productos tfoot tr {
+  border-top: 2px solid #667eea;
+}
+
+/* Títulos h3 dentro de ranking y comparativa */
+.ranking-seccion h3, .comparativa-seccion h3 {
+  font-size: 1.4em;
+  color: #ff00ff;
+  margin: 25px 0 12px 0;
+}
+
+.ranking-seccion h3 {
+  margin: 30px 0 15px 0;
+  border-bottom: 2px solid #764ba2;
+  padding-bottom: 8px;
+}
+
+/* Conclusión */
+.conclusion ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.conclusion li {
+  font-size: 1em;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #0f0f2d;
+  border-radius: 5px;
+  border-left: 4px solid #764ba2;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.conclusion strong {
+  color: #ff00ff;
+}
+
+/*  13. FORMULARIOS  */
+.formulario-container {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  background-color: #0f0f2d;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #ff00ff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #667eea;
+  font-size: 1.1em;
+}
+.form-group input[type="text"], .form-group input[type="tel"], .form-group input[type="email"], .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #667eea;
+  border-radius: 5px;
+  background-color: #0a0a1a;
+  color: #ffffff;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+.form-group input[type="text"]:hover, .form-group input[type="tel"]:hover, .form-group input[type="email"]:hover, .form-group select:hover, .form-group textarea:hover {
+  border-color: #ff00ff;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  font-family: Arial, sans-serif;
+}
+
+/* Audio en contacto */
+.audio-container {
+  background-color: #0f0f2d;
+  border: 2px solid #667eea;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 0 auto 25px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.audio-container p {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.audio-container audio {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+/*  14. EMPRESA (quienessomos / dondesomos)  */
+.mision, .vision, .valores, .direccion, .horario, .mapa {
+  background-color: #0f0f2d;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.mision h3, .vision h3, .valores h3, .direccion h3, .horario h3, .mapa h3 {
+  color: #667eea;
+  margin-bottom: 12px;
+  font-size: 1.4em;
+}
+
+.valores li, .horario li {
+  padding: 6px 0;
+  color: #ffffff;
+}
+
+.mapa iframe {
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* Equipo */
+.miembro {
+  background-color: #0f0f2d;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 2px solid #764ba2;
+  text-align: center;
+}
+
+.foto-equipo {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 3px solid #764ba2;
+  margin-bottom: 15px;
+}
+
+.miembro h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.cargo {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*  15. CONTENIDO (FAQ / Blog / Envíos)  */
+/* FAQ */
+.pregunta {
+  background-color: #0f0f2d;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #667eea;
+}
+
+.pregunta h3 {
+  color: #ff00ff;
+  margin-bottom: 12px;
+  font-size: 1.3em;
+}
+
+.pregunta p {
+  text-align: left;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+.faq-seccion ul {
+  text-align: left;
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+.contacto-faq {
+  text-align: center;
+}
+
+.contacto-faq ul {
+  list-style: none;
+  margin: 20px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.contacto-faq li {
+  font-size: 1.1em;
+  padding: 8px;
+  margin: 6px 0;
+  background-color: #0f0f2d;
+  border-radius: 5px;
+  border-left: 4px solid #764ba2;
+  color: #ffffff;
+}
+
+/* Blog */
+.noticia {
+  background-color: #0f0f2d;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 2px solid #667eea;
+  border-left: 5px solid #ff00ff;
+}
+
+.noticia h3 {
+  font-size: 1.6em;
+  color: #ff00ff;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  text-align: left;
+  color: #ffffff;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.fecha {
+  color: #888888;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.imagen-noticia {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #ff00ff;
+  border-radius: 8px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Envíos */
+.politica {
+  background-color: #0f0f2d;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  order: 2px solid #764ba2;
+  border-left: 5px solid #667eea;
+}
+
+.politica h3 {
+  color: #764ba2;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #764ba2;
+  padding-bottom: 8px;
+}
+
+.politica h4 {
+  color: #667eea;
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+}
+
+.politica ul, .politica ol {
+  list-style-position: inside;
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.politica li {
+  padding: 5px 0;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.politica p {
+  color: #ffffff;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}

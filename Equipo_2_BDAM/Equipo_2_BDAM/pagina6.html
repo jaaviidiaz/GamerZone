@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="hecho_por" content="Ifeoluwa Glory Faborode Aladesanmi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMERZONE - Presupuesto</title>
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo GAMERZONE" class="logo">
+        </div>
+        <h1>GAMERZONE</h1>
+        <p>Tu tienda especializada en componentes gaming</p>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- INICIO -->
+            <li><a href="pagina1.html">Presentación</a></li>
+            <li><a href="pagina2.html">Inicio</a></li>
+
+            <!-- PRODUCTOS -->
+            <li><a href="pagina3.html">Tienda</a></li>
+            <li><a href="pagina4.html">Comparativa</a></li>
+            <li><a href="pagina12.html">Ranking</a></li>
+
+            <!-- SERVICIOS -->
+            <li><a href="pagina6.html">Presupuesto</a></li>
+            <br><br>
+            <li><a href="pagina11.html">Envíos</a></li>
+
+            <!-- EMPRESA -->
+            <li><a href="pagina8.html">¿Quiénes somos?</a></li>
+            <li><a href="pagina7.html">¿Dónde estamos?</a></li>
+
+            <li><a href="pagina10.html">Blog</a></li>
+            
+            <!-- CONTACTO -->
+            <li><a href="pagina5.html">Contacto</a></li>
+            <li><a href="pagina9.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="presupuesto-seccion">
+            <h2>SOLICITA TU PRESUPUESTO</h2>
+            <p>Configura tu PC gaming a medida y recibe un presupuesto personalizado</p>
+
+            <div class="formulario-container">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,50}" placeholder="Ej: María García López">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ej: usuario@correo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[6789][0-9]{8}" placeholder="Ej: 612345678">
+                    </div>
+
+                    <h3>Selecciona tus componentes:</h3>
+
+                    <div class="form-group">
+                        <label for="procesador">Procesador *</label>
+                        <select id="procesador" name="procesador" required>
+                            <option value="">-- Selecciona un procesador --</option>
+                            <option value="Intel i5-13400F">Intel i5-13400F - 250€</option>
+                            <option value="Intel i7-13700K">Intel i7-13700K - 450€</option>
+                            <option value="AMD Ryzen 5 7600X">AMD Ryzen 5 7600X - 300€</option>
+                            <option value="AMD Ryzen 7 7800X3D">AMD Ryzen 7 7800X3D - 480€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grafica">Tarjeta Gráfica *</label>
+                        <select id="grafica" name="grafica" required>
+                            <option value="">-- Selecciona una tarjeta gráfica --</option>
+                            <option value="RTX 4060">RTX 4060 - 350€</option>
+                            <option value="RTX 4070">RTX 4070 - 799€</option>
+                            <option value="RTX 4080">RTX 4080 - 1199€</option>
+                            <option value="RX 7800 XT">RX 7800 XT - 550€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ram">Memoria RAM *</label>
+                        <select id="ram" name="ram" required>
+                            <option value="">-- Selecciona la memoria RAM --</option>
+                            <option value="16GB DDR5">16GB DDR5 - 120€</option>
+                            <option value="32GB DDR5">32GB DDR5 - 220€</option>
+                            <option value="64GB DDR5">64GB DDR5 - 400€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="almacenamiento">Almacenamiento *</label>
+                        <select id="almacenamiento" name="almacenamiento" required>
+                            <option value="">-- Selecciona almacenamiento --</option>
+                            <option value="SSD 1TB">SSD 1TB - 99€</option>
+                            <option value="SSD 2TB">SSD 2TB - 179€</option>
+                            <option value="SSD 2TB + HDD 4TB">SSD 2TB + HDD 4TB - 299€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sistema">Sistema Operativo *</label>
+                        <select id="sistema" name="sistema" required>
+                            <option value="">-- Selecciona sistema operativo --</option>
+                            <option value="Windows 11 Home">Windows 11 Home - 139€</option>
+                            <option value="Windows 11 Pro">Windows 11 Pro - 219€</option>
+                            <option value="Sin sistema">Sin sistema operativo - 0€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caja">Color de la caja *</label>
+                        <select id="caja" name="caja" required>
+                            <option value="">-- Selecciona color --</option>
+                            <option value="Negro">Negro - 80€</option>
+                            <option value="Blanco">Blanco - 80€</option>
+                            <option value="RGB">RGB con iluminación - 120€</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" maxlength="500" placeholder="Escribe aquí tu consulta (máx. 500 caracteres)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Solicitar presupuesto</button>
+                        <button type="reset" class="btn-reset">Borrar todo</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Síguenos en redes sociales</h3>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+        </ul>
+        <p>&copy; 2026 GAMERZONE - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
