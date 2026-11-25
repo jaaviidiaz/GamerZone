@@ -6,6 +6,8 @@ Web de una tienda de componentes gaming hecha en clase (DAM, Davante Medac Nova)
 
 ## Estructura
 
+Todo el código está en `Equipo_2_BDAM/Equipo_2_BDAM/`:
+
 - `pagina1.html` … `pagina12.html` — las páginas de la web
 - `css/todo.css` — hoja de estilos común
 - `imagenes/` — imágenes de productos, noticias y equipo
